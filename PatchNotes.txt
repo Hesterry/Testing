@@ -1,0 +1,74 @@
+LSC Patch Notes
+
+
+
+-- LATEST: Public Beta v1.0.1 Notes --
+(May 6th, 2018)
+
+- Overall filesize should be significantly smaller. Removed a lot of the erroneous Unreal Engine plugins. Still more to do, though.
+- Removed the profit per craft tooltip from recipe mode in the inspector.
+- Moved the craft multiplier (for batch crafting) out of the additional settings section in the inspector.
+
+
+
+-- Public Beta v1.0 Notes --
+(May 5th, 2018)
+
+- Added a simple in-app guide, explaining every feature of LSC :)
+- Fixed multiple bugs involving the Use Tree, including a CTD. It should also be much snappier when loaded.
+- Setting: Auto-save converted to a dropdown.
+- Settings menu no longer uses checkboxes. Toggles are now used instead.
+- Fixed Setting: Record High/Low Tolerance. It should update correctly now.
+- Trade Crate tool no longer allows users to use the desert buff when a route to Valencia isn't selected.
+- Added the ability to tag items as bottlenecks, highlighting them as red in the item inspector.
+- Mousing over the total material cost of a material in the inspector will show the profit per item (IE profit per meat, milk, egg, etc). Additionally, it will show how much the material would sell for on the market after tax.
+- Fixed various instances of overlapping text.
+
+
+
+-- Closed Beta v2.3 Notes --
+(May 4th, 2018)
+
+- Double clicking an item name in the search tool and the inspector will now automatically bring up the appropriate tool (use tree for materials, inspector for crafted items).
+- Add the ability to search by item name or by item source (alchemy, processing, gathering, etc)
+- Added search favorites.
+- Temporarily disabled the sorting buttons for the search panel. I will re-enable them when I can fix up their functionality, as well as the search tool as a whole.
+- Added a "Force disable tax" toggle to the inspector.
+- The value of critical products (IE, blue elixirs) can now be edited in the inspector.
+- Added a "Total Sell Value" to the inspector.
+- Adjusted the layout of the inspector.
+- Added a three mode switch to the inspector instead of a "Base/Scratch" toggle. Introducing the "Adaptive" material list :)
+- Fixed a typo in the coral material group.
+- Fixed trade crates throwing an error every time a crate is selected.
+- Made the alignment of items in the use/recipe trees consistent.
+- Added partial implementation for customizing the appearance of the background, panels, and text. More work to do, but mostly functional.
+- It should no longer be possible to move windows outside of the viewport. Note that a window can still be "lost" if placed near the edge before shrinking the viewport. However, simply enlarging it again will make it possible to retrieve the window.
+
+
+
+-- Closed Beta v2.0 Notes --
+(April 20th, 2018)
+
+- Settings menu added. Allows users to enable/disable tooltips, auto-saving, value packs, and adjust the record high/low tolerance.
+- Panels have been given a border.
+- Updated the old check box in the Search tool.
+- New panels will no longer be placed behind old ones.
+- All buttons should have visual feedback when clicked.
+- Clicking within any part of a window will now properly reorder it.
+- Panels no longer twitch down and to the right when initially moved.
+- Exposed production and crit multipliers in the database.
+- Profit for imperial crates now accounts for crit/double crafts via Production Multiplier.
+- Interaction menu size should be consistent.
+- Interaction menu should now show appropriate options based on the item being interacted with.
+- Interaction menus have been added to the items in the Recipe and Use Trees.
+- Pulling up the interaction menu should always be brought up using right-click across all menus.
+- Search tool will auto-focus the search bar when created or un-minimized.
+- Searches with a large number of results should no longer cause lag when the window is moved around.
+- Fixed the Item Inspector throwing an error when "confirming" an empty material value entry box.
+- Material lists in the Item Inspector will now update quantities and costs to account for the craft multiplier.
+- Value pack overrides have been added to the Inspector, independently for both normal and crit results.
+- Added the ability to set production and crit multipliers for an item in the inspector, and whether to include critical crafts in the calculation.
+- The material tree will no longer break down by production multiplier. It will instead show basic recipes.
+- Use trees for items that are a part of material groups now function correctly.
+- Use tree now shows how many of the item in question are used in the recipe.
+- Use and material trees now have an arrow indicating which items have uses/materials.
